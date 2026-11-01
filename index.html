@@ -7,17 +7,40 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello! Welcome to the Baking Show!</h1>
-    <h2>Let's decorate a cake!</h2>
-    <h2>Choose your colour icing!</h2>
-    <button>Pink</button>
-    <button>Yellow</button>
-    <button>Blue</button>
-    
-    <h3>Choose your topping!</h3>
-    <button>Long Sprinkles</button>
-    <button>Dot Sprinkles</button>
-    <button>Flowers</button>
-    
+    <!-- Title -->
+    <h1>What do I want to bake today?</h1>
+    <img id="baking" src="css/images/baking.jpg">
+
+    <!-- header -->
+    <h2 class="heading">Let's see what you should bake!</h2>
+
+    <!-- Ask what flavour user wants to bake -->
+    <div class="button">
+        <h2 class="heading">Do you want to make something:</h2>
+        <button onclick="selectedflavour('Chocolate')">Chocolate</button>
+        <button onclick="selectedflavour('Vanilla')">Vanilla</button>
+        <button onclick="selectedflavour('Fruity')">Fruity</button>
+        <button onclick="selectedflavour('Caramel')">Caramel</button>
+    </div>
+
+    <!-- Ask what type of item user is in the mood for -->
+    <div class="button">
+        <h2 class="heading">What are you in the mood for?</h2>
+        <button onclick="selectedtype('Cake')">Cake</button>
+        <button onclick="selectedtype('Cookies')">Cookies</button>
+        <button onclick="selectedtype('Mousse')">Mousse</button>
+        <button onclick="selectedtype('Pastry')">Pastry</button>
+    </div>
+
+    <!-- Give user their result after they click button -->
+    <h2 class = "heading">Here is your final decision!</h2>
+    <button id ="btn1" onclick="bakingFunction()">Click to see what to make?</button>
+
+    <!-- Display result image -->
+    <img id="decision" src="css/images/decision.avif"
+
+    <!-- Javascript connection -->
+    <script src="js/script.js"></script>
+
 </body>
 </html>

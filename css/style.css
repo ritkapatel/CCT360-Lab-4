@@ -1,7 +1,80 @@
-h1 {
-    color: pink;
+/* Fonts */
+@font-face {
+    font-family: "font1";
+    src: url(fonts/font1.ttf);
+}
+@font-face {
+    font-family: "font2";
+    src: url(fonts/font2.ttf);
 }
 
-h2 {
-    color: rgb(0, 77, 145);
+/* headings style */
+h1 {
+    color: rgb(187, 82, 117);
+    text-align: center;
+    font-size: 80px;
+    font-family: "font1";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+}
+
+/* heading style */
+.heading {
+    color: rgb(255, 0, 140);
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px #000000;
+    text-decoration: underline;
+}
+
+.button {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* button styles */
+button{
+    /* margin-left:210px; */
+    font-size: 40px;
+    background-color: rgb(255, 203, 228);
+    font-family: "font2";
+    box-shadow: 5px 10px #888888;
+    border-radius: 25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffe1ed;
+    /* Green */
+    color: rgb(177, 73, 128);
+}
+
+/* changing background */
+body{
+    background-color: rgb(252, 231, 234);
+}
+
+/* image style */
+#baking {
+    margin-left: 150px;
+    border: 10px solid rgb(187, 82, 117);
+    width: 1100px;
+}
+
+/* button style */
+#btn1 {
+    margin-top: 40px;
+    margin-left: 450px;
+}
+
+/* image style */
+#decision {
+    margin-top: 100px;
+    margin-left: 430px;
+    width: 600px;
+    height: 600px;
+    border: 10px solid rgb(187, 82, 117);
 }
